@@ -1,0 +1,21 @@
+{
+  "name": "IP, Email tracking over suspicious activity",
+  "description": "DESCRIPTION WILL BE SOON",
+  "version": "1.0",
+  "author": "CleanTalk.org",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": { 
+    "16":  "images/cleantalk16.png",
+    "48":  "images/cleantalk48.png",
+    "128": "images/cleantalk128.png" 
+  },
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "tabs",
+    "notifications"
+  ]
+}
