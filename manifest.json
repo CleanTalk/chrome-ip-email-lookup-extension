@@ -17,5 +17,12 @@
     "storage",
     "tabs",
     "notifications"
+  ],
+  "content_scripts" : [
+    {
+        "matches" : ["http://*/*", "https://*/*"],
+        "js": ["message.js"],
+        "run_at": "document_end"
+    }
   ]
 }

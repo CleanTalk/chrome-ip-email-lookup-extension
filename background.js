@@ -22,11 +22,17 @@ chrome.contextMenus.onClicked.addListener(function(clickData) {
             chrome.tabs.create({ url: url });
         }
         else {
-            notification('Lookup does work only for valid IP or Email address');
+            // notification('Lookup does work only for valid IP or Email address');
+            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+                chrome.tabs.sendMessage(tabs[0].id, {message: "error_message"}, function(response) {
+                    console.log(response);
+                });
+            });
         }
     }
 });
 
+/*
 function notification(message) {
     chrome.notifications.create({
         title: 'CleanTalk',
@@ -35,6 +41,7 @@ function notification(message) {
         type: 'basic'
     })
 }
+*/
 
 const validateEmail = (email) => {
     return email.match(
