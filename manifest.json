@@ -12,11 +12,13 @@
     "48":  "images/cleantalk48.png",
     "128": "images/cleantalk128.png" 
   },
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
   "permissions": [
     "contextMenus",
-    "storage",
-    "tabs",
-    "notifications"
+    "tabs"
   ],
   "content_scripts" : [
     {
