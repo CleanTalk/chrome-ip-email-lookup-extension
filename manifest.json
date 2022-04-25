@@ -1,6 +1,6 @@
 {
   "name": "IP, Email tracking over suspicious activity",
-  "description": "DESCRIPTION WILL BE SOON",
+  "description": "Checks all visible IP/email addresses on a web page against a spam database at https://cleantalk.org/blacklists.",
   "version": "1.0",
   "author": "CleanTalk.org",
   "manifest_version": 3,
